@@ -19,7 +19,7 @@ class MyPromise {
   constructor(executor) {
     this.status = MyPromise.PENDING // 初始状态为pending
     this.value = undefined // 成功状态的值
-    this.reason = undefined // 失败状态的原因
+    this.reason = undefined // 失败状态的原因          
     this.onFulfilledCallbacks = [] // 成功回调队列
     this.onRejectedCallbacks = [] // 失败回调队列
 
